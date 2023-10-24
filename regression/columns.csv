@@ -1,129 +1,129 @@
-﻿Feature,Type
-state,numeric
-county,numeric
-community,numeric
-communityname,string
-fold,numeric
-population,numeric
-householdsize,numeric
-racepctblack,numeric
-racePctWhite,numeric
-racePctAsian,numeric
-racePctHisp,numeric
-agePct12t21,numeric
-agePct12t29,numeric
-agePct16t24,numeric
-agePct65up,numeric
-numbUrban,numeric
-pctUrban,numeric
-medIncome,numeric
-pctWWage,numeric
-pctWFarmSelf,numeric
-pctWInvInc,numeric
-pctWSocSec,numeric
-pctWPubAsst,numeric
-pctWRetire,numeric
-medFamInc,numeric
-perCapInc,numeric
-whitePerCap,numeric
-blackPerCap,numeric
-indianPerCap,numeric
-AsianPerCap,numeric
-OtherPerCap,numeric
-HispPerCap,numeric
-NumUnderPov,numeric
-PctPopUnderPov,numeric
-PctLess9thGrade,numeric
-PctNotHSGrad,numeric
-PctBSorMore,numeric
-PctUnemployed,numeric
-PctEmploy,numeric
-PctEmplManu,numeric
-PctEmplProfServ,numeric
-PctOccupManu,numeric
-PctOccupMgmtProf,numeric
-MalePctDivorce,numeric
-MalePctNevMarr,numeric
-FemalePctDiv,numeric
-TotalPctDiv,numeric
-PersPerFam,numeric
-PctFam2Par,numeric
-PctKids2Par,numeric
-PctYoungKids2Par,numeric
-PctTeen2Par,numeric
-PctWorkMomYoungKids,numeric
-PctWorkMom,numeric
-NumIlleg,numeric
-PctIlleg,numeric
-NumImmig,numeric
-PctImmigRecent,numeric
-PctImmigRec5,numeric
-PctImmigRec8,numeric
-PctImmigRec10,numeric
-PctRecentImmig,numeric
-PctRecImmig5,numeric
-PctRecImmig8,numeric
-PctRecImmig10,numeric
-PctSpeakEnglOnly,numeric
-PctNotSpeakEnglWell,numeric
-PctLargHouseFam,numeric
-PctLargHouseOccup,numeric
-PersPerOccupHous,numeric
-PersPerOwnOccHous,numeric
-PersPerRentOccHous,numeric
-PctPersOwnOccup,numeric
-PctPersDenseHous,numeric
-PctHousLess3BR,numeric
-MedNumBR,numeric
-HousVacant,numeric
-PctHousOccup,numeric
-PctHousOwnOcc,numeric
-PctVacantBoarded,numeric
-PctVacMore6Mos,numeric
-MedYrHousBuilt,numeric
-PctHousNoPhone,numeric
-PctWOFullPlumb,numeric
-OwnOccLowQuart,numeric
-OwnOccMedVal,numeric
-OwnOccHiQuart,numeric
-RentLowQ,numeric
-RentMedian,numeric
-RentHighQ,numeric
-MedRent,numeric
-MedRentPctHousInc,numeric
-MedOwnCostPctInc,numeric
-MedOwnCostPctIncNoMtg,numeric
-NumInShelters,numeric
-NumStreet,numeric
-PctForeignBorn,numeric
-PctBornSameState,numeric
-PctSameHouse85,numeric
-PctSameCity85,numeric
-PctSameState85,numeric
-LemasSwornFT,numeric
-LemasSwFTPerPop,numeric
-LemasSwFTFieldOps,numeric
-LemasSwFTFieldPerPop,numeric
-LemasTotalReq,numeric
-LemasTotReqPerPop,numeric
-PolicReqPerOffic,numeric
-PolicPerPop,numeric
-RacialMatchCommPol,numeric
-PctPolicWhite,numeric
-PctPolicBlack,numeric
-PctPolicHisp,numeric
-PctPolicAsian,numeric
-PctPolicMinor,numeric
-OfficAssgnDrugUnits,numeric
-NumKindsDrugsSeiz,numeric
-PolicAveOTWorked,numeric
-LandArea,numeric
-PopDens,numeric
-PctUsePubTrans,numeric
-PolicCars,numeric
-PolicOperBudg,numeric
-LemasPctPolicOnPatr,numeric
-LemasGangUnitDeploy,numeric
-LemasPctOfficDrugUn,numeric
-PolicBudgPerPop,numeric
-ViolentCrimesPerPop,numeric
+﻿Feature,Type,Description
+state,numeric,"US state (by number) - not counted as predictive above, but if considered, should be considered nominal (nominal)"
+county,numeric,"Numeric code for county - not predictive, and many missing values (numeric)"
+community,numeric,Numeric code for community - not predictive and many missing values (numeric)
+communityname,string,Community name - not predictive - for information only (string)
+fold,numeric,"Fold number for non-random 10-fold cross-validation, potentially useful for debugging, paired tests - not predictive (numeric)"
+population,numeric,Population for the community (numeric - decimal)
+householdsize,numeric,Mean people per household (numeric - decimal)
+racepctblack,numeric,Percentage of the population that is African American (numeric - decimal)
+racePctWhite,numeric,Percentage of the population that is Caucasian (numeric - decimal)
+racePctAsian,numeric,Percentage of the population that is of Asian heritage (numeric - decimal)
+racePctHisp,numeric,Percentage of the population that is of Hispanic heritage (numeric - decimal)
+agePct12t21,numeric,Percentage of the population that is 44531 years old (numeric - decimal)
+agePct12t29,numeric,Percentage of the population that is 47453 years old (numeric - decimal)
+agePct16t24,numeric,Percentage of the population that is 16-24 years old (numeric - decimal)
+agePct65up,numeric,Percentage of the population that is 65 and over (numeric - decimal)
+numbUrban,numeric,Number of people living in areas classified as urban (numeric - decimal)
+pctUrban,numeric,Percentage of people living in areas classified as urban (numeric - decimal)
+medIncome,numeric,Median household income (numeric - decimal)
+pctWWage,numeric,Percentage of households with wage or salary income in 1989 (numeric - decimal)
+pctWFarmSelf,numeric,Percentage of households with farm or self-employment income in 1989 (numeric - decimal)
+pctWInvInc,numeric,Percentage of households with investment/rent income in 1989 (numeric - decimal)
+pctWSocSec,numeric,Percentage of households with social security income in 1989 (numeric - decimal)
+pctWPubAsst,numeric,Percentage of households with public assistance income in 1989 (numeric - decimal)
+pctWRetire,numeric,Percentage of households with retirement income in 1989 (numeric - decimal)
+medFamInc,numeric,Median family income (differs from household income for non-family households) (numeric - decimal)
+perCapInc,numeric,Per capita income (numeric - decimal)
+whitePerCap,numeric,Per capita income for Caucasians (numeric - decimal)
+blackPerCap,numeric,Per capita income for African Americans (numeric - decimal)
+indianPerCap,numeric,Per capita income for Native Americans (numeric - decimal)
+AsianPerCap,numeric,Per capita income for people with Asian heritage (numeric - decimal)
+OtherPerCap,numeric,Per capita income for people with 'other' heritage (numeric - decimal)
+HispPerCap,numeric,Per capita income for people with Hispanic heritage (numeric - decimal)
+NumUnderPov,numeric,Number of people under the poverty level (numeric - decimal)
+PctPopUnderPov,numeric,Percentage of people under the poverty level (numeric - decimal)
+PctLess9thGrade,numeric,Percentage of people 25 and over with less than a 9th-grade education (numeric - decimal)
+PctNotHSGrad,numeric,Percentage of people 25 and over that are not high school graduates (numeric - decimal)
+PctBSorMore,numeric,Percentage of people 25 and over with a bachelor's degree or higher education (numeric - decimal)
+PctUnemployed,numeric,"Percentage of people 16 and over, in the labor force, and unemployed (numeric - decimal)"
+PctEmploy,numeric,Percentage of people 16 and over who are employed (numeric - decimal)
+PctEmplManu,numeric,Percentage of people 16 and over who are employed in manufacturing (numeric - decimal)
+PctEmplProfServ,numeric,Percentage of people 16 and over who are employed in professional services (numeric - decimal)
+PctOccupManu,numeric,Percentage of people 16 and over who are employed in manufacturing (numeric - decimal)
+PctOccupMgmtProf,numeric,Percentage of people 16 and over who are employed in management or professional occupations (numeric - decimal)
+MalePctDivorce,numeric,Percentage of males who are divorced (numeric - decimal)
+MalePctNevMarr,numeric,Percentage of males who have never married (numeric - decimal)
+FemalePctDiv,numeric,Percentage of females who are divorced (numeric - decimal)
+TotalPctDiv,numeric,Percentage of the population who are divorced (numeric - decimal)
+PersPerFam,numeric,Mean number of people per family (numeric - decimal)
+PctFam2Par,numeric,Percentage of families (with kids) that are headed by two parents (numeric - decimal)
+PctKids2Par,numeric,Percentage of kids in family housing with two parents (numeric - decimal)
+PctYoungKids2Par,numeric,Percent of kids 4 and under in two-parent households (numeric - decimal)
+PctTeen2Par,numeric,Percent of kids age 43070 in two-parent households (numeric - decimal)
+PctWorkMomYoungKids,numeric,Percentage of moms of kids 6 and under in the labor force (numeric - decimal)
+PctWorkMom,numeric,Percentage of moms of kids under 18 in the labor force (numeric - decimal)
+NumIlleg,numeric,Number of kids born to never married (numeric - decimal)
+PctIlleg,numeric,Percentage of kids born to never married (numeric - decimal)
+NumImmig,numeric,Total number of people known to be foreign-born (numeric - decimal)
+PctImmigRecent,numeric,Percentage of immigrants who immigrated within the last 3 years (numeric - decimal)
+PctImmigRec5,numeric,Percentage of immigrants who immigrated within the last 5 years (numeric - decimal)
+PctImmigRec8,numeric,Percentage of immigrants who immigrated within the last 8 years (numeric - decimal)
+PctImmigRec10,numeric,Percentage of immigrants who immigrated within the last 10 years (numeric - decimal)
+PctRecentImmig,numeric,Percent of the population who have immigrated within the last 3 years (numeric - decimal)
+PctRecImmig5,numeric,Percent of the population who have immigrated within the last 5 years (numeric - decimal)
+PctRecImmig8,numeric,Percent of the population who have immigrated within the last 8 years (numeric - decimal)
+PctRecImmig10,numeric,Percent of the population who have immigrated within the last 10 years (numeric - decimal)
+PctSpeakEnglOnly,numeric,Percent of people who speak only English (numeric - decimal)
+PctNotSpeakEnglWell,numeric,Percent of people who do not speak English well (numeric - decimal)
+PctLargHouseFam,numeric,Percent of family households that are large (6 or more) (numeric - decimal)
+PctLargHouseOccup,numeric,Percent of all occupied households that are large (6 or more people) (numeric - decimal)
+PersPerOccupHous,numeric,Mean persons per household (numeric - decimal)
+PersPerOwnOccHous,numeric,Mean persons per owner-occupied household (numeric - decimal)
+PersPerRentOccHous,numeric,Mean persons per rental household (numeric - decimal)
+PctPersOwnOccup,numeric,Percent of people in owner-occupied households (numeric - decimal)
+PctPersDenseHous,numeric,Percent of persons in dense housing (more than 1 person per room) (numeric - decimal)
+PctHousLess3BR,numeric,Percent of housing units with less than 3 bedrooms (numeric - decimal)
+MedNumBR,numeric,Median number of bedrooms (numeric - decimal)
+HousVacant,numeric,Number of vacant households (numeric - decimal)
+PctHousOccup,numeric,Percent of housing occupied (numeric - decimal)
+PctHousOwnOcc,numeric,Percent of households owner-occupied (numeric - decimal)
+PctVacantBoarded,numeric,Percent of vacant housing that is boarded up (numeric - decimal)
+PctVacMore6Mos,numeric,Percent of vacant housing that has been vacant more than 6 months (numeric - decimal)
+MedYrHousBuilt,numeric,Median year housing units built (numeric - decimal)
+PctHousNoPhone,numeric,"Percent of occupied housing units without phone (in 1990, this was rare!) (numeric - decimal)"
+PctWOFullPlumb,numeric,Percent of housing without complete plumbing facilities (numeric - decimal)
+OwnOccLowQuart,numeric,Owner-occupied housing - lower quartile value (numeric - decimal)
+OwnOccMedVal,numeric,Owner-occupied housing - median value (numeric - decimal)
+OwnOccHiQuart,numeric,Owner-occupied housing - upper quartile value (numeric - decimal)
+RentLowQ,numeric,Rental housing - lower quartile rent (numeric - decimal)
+RentMedian,numeric,Rental housing - median rent (Census variable H32B from file STF1A) (numeric - decimal)
+RentHighQ,numeric,Rental housing - upper quartile rent (numeric - decimal)
+MedRent,numeric,Median gross rent (Census variable H43A from file STF3A - includes utilities) (numeric - decimal)
+MedRentPctHousInc,numeric,Median gross rent as a percentage of household income (numeric - decimal)
+MedOwnCostPctInc,numeric,Median owners' cost as a percentage of household income - for owners with a mortgage (numeric - decimal)
+MedOwnCostPctIncNoMtg,numeric,Median owners' cost as a percentage of household income - for owners without a mortgage (numeric - decimal)
+NumInShelters,numeric,Number of people in homeless shelters (numeric - decimal)
+NumStreet,numeric,Number of homeless people counted in the street (numeric - decimal)
+PctForeignBorn,numeric,Percent of people foreign-born (numeric - decimal)
+PctBornSameState,numeric,Percent of people born in the same state as currently living (numeric - decimal)
+PctSameHouse85,numeric,Percent of people living in the same house as in 1985 (5 years before) (numeric - decimal)
+PctSameCity85,numeric,Percent of people living in the same city as in 1985 (5 years before) (numeric - decimal)
+PctSameState85,numeric,Percent of people living in the same state as in 1985 (5 years before) (numeric - decimal)
+LemasSwornFT,numeric,Number of sworn full-time police officers (numeric - decimal)
+LemasSwFTPerPop,numeric,Sworn full-time police officers per 100K population (numeric - decimal)
+LemasSwFTFieldOps,numeric,"Number of sworn full-time police officers in field operations (on the street as opposed to administrative, etc.) (numeric - decimal)"
+LemasSwFTFieldPerPop,numeric,Sworn full-time police officers in field operations per 100K population (numeric - decimal)
+LemasTotalReq,numeric,Total requests for police (numeric - decimal)
+LemasTotReqPerPop,numeric,Total requests for police per 100K population (numeric - decimal)
+PolicReqPerOffic,numeric,Total requests for police per police officer (numeric - decimal)
+PolicPerPop,numeric,Police officers per 100K population (numeric - decimal)
+RacialMatchCommPol,numeric,A measure of the racial match between the community and the police force. High values indicate proportions in the community and police force are similar (numeric - decimal)
+PctPolicWhite,numeric,Percent of police that are Caucasian (numeric - decimal)
+PctPolicBlack,numeric,Percent of police that are African American (numeric - decimal)
+PctPolicHisp,numeric,Percent of police that are Hispanic (numeric - decimal)
+PctPolicAsian,numeric,Percent of police that are Asian (numeric - decimal)
+PctPolicMinor,numeric,Percent of police that are minority of any kind (numeric - decimal)
+OfficAssgnDrugUnits,numeric,Number of officers assigned to special drug units (numeric - decimal)
+NumKindsDrugsSeiz,numeric,Number of different kinds of drugs seized (numeric - decimal)
+PolicAveOTWorked,numeric,Police average overtime worked (numeric - decimal)
+LandArea,numeric,Land area in square miles (numeric - decimal)
+PopDens,numeric,Population density in persons per square mile (numeric - decimal)
+PctUsePubTrans,numeric,Percent of people using public transit for commuting (numeric - decimal)
+PolicCars,numeric,Number of police cars (numeric - decimal)
+PolicOperBudg,numeric,Police operating budget (numeric - decimal)
+LemasPctPolicOnPatr,numeric,Percent of sworn full-time police officers on patrol (numeric - decimal)
+LemasGangUnitDeploy,numeric,"Gang unit deployed (numeric - decimal - but really ordinal - 0 means NO, 1 means YES, 0.5 means Part Time)"
+LemasPctOfficDrugUn,numeric,Percent of officers assigned to drug units (numeric - decimal)
+PolicBudgPerPop,numeric,Police operating budget per population (numeric - decimal)
+ViolentCrimesPerPop,numeric,Total number of violent crimes per 100K population (numeric - decimal) GOAL attribute (to be predicted)
