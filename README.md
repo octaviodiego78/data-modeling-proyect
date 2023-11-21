@@ -6,6 +6,8 @@ Project where we evaluate distinct models for regression/classification to get t
 Team member:
 
 Octavio Perez
-Patricio Villanueva - 
-Jose Luis Almendarez - 
+
+Patricio Villanueva -   
+
+Jose Luis Almendarez - https://github.com/JLuisAlmendarez
 
